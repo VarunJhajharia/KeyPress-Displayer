@@ -18,12 +18,14 @@ Challenge is to make a script that,
 </li>
 <li> Should display "<b>Numpad0</b>" as "<b>0</b>" "<b>Numpad1</b>" as "<b>1</b>" etc.
 </li>
+<li> Should display "<b>(</b>" as "<b>(</b>" and not "<b>Shift+0</b>" or "<b>Shift+)</b>" likewise for all symbols.
+</li>
 <li> Multiple keypresses like "<b>Backspace Backspace Backspace Backspace Backspace</b>" as "<b>Backspace(x5)</b>", the number in the brackets is to increase with the increase in keypresses.
 </li>
 <li> Should not treat "<b>Hello</b>" as "<b>Hel(x2)o</b>"
 </li>
 <li> Should refresh the display after a certain number of keypresses are made.<br>
-For example, "<b>I went to the zoo yesterday had lots of fun</b>" should be displayed as<br>
+For example, with a breakpoint of 15 characters the typed string "<b>I went to the zoo yesterday had lots of fun</b>" should be displayed as,<br>
 "<b>I went to the z</b>" then<br>
 "<b>oo yesterday ha</b>" and finally<br>
 "<b>d lots of fun</b>" </li>
